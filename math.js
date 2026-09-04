@@ -74,3 +74,5 @@ export function callGetUserById(userId) {
     });
 }
 
+callGetUserById(10);
+
