@@ -10,7 +10,7 @@ test('multiply returns the product of two numbers', () => {
 });
 
 test('subtract returns the difference between two numbers', () => {
-  assert.equal(subtract(1, 4), 6);
+  assert.equal(subtract(1, 4), -3);
   assert.equal(subtract(-3, 4), -7);
   assert.equal(subtract(5.5, 2.25), 3.25);
 });
