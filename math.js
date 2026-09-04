@@ -76,7 +76,7 @@ export function callGetUserById(userId) {
     })
     .then(data => data)
     .catch(error => {
-      console.error('There was a problem with the fetch operation:', error);
+      console.error('There were problem with the fetch operation:', error);
       throw error;
     });
 }
