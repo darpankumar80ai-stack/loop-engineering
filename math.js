@@ -30,7 +30,7 @@ export function subtract(firstNumber, secondNumber) {
  */
 export function divide(firstNumber, secondNumber) {
   if (secondNumber === 0) {
-    throw new Error('Cannot divide by zero.');
+    throw new Error("Cannot divide by zero.");
   }
 
   return firstNumber / secondNumber;
@@ -68,18 +68,17 @@ export function power(base, exponent) {
  */
 export function callGetUserById(userId) {
   return fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
-    .then(response => {
+    .then((response) => {
       if (!response.ok) {
-        throw new Error('Network response was not ok');
+        throw new Error("Network response was not ok");
       }
       return response.json();
     })
-    .then(data => data)
-    .catch(error => {
-      console.error('There were problem with the fetch operation:', error);
+    .then((data) => data)
+    .catch((error) => {
+      console.error("There were problem with the fetch operation:", error);
       throw error;
     });
 }
 
 callGetUserById(10);
-
