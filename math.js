@@ -59,6 +59,13 @@ export function power(base, exponent) {
   return Math.pow(base, exponent);
 }
 
+/**
+ * Fetches a user by their ID from the JSONPlaceholder API.
+ *
+ * @param {number|string} userId - The unique identifier of the user to fetch.
+ * @returns {Promise<Object>} A promise that resolves to the user object.
+ * @throws {Error} Throws when the fetch request fails or the response is not ok.
+ */
 export function callGetUserById(userId) {
   return fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
     .then(response => {

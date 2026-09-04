@@ -10,7 +10,7 @@ test('multiply returns the product of two numbers', () => {
 });
 
 test('subtract returns the difference between two numbers', () => {
-  assert.equal(subtract(10, 4), 6);
+  assert.equal(subtract(1, 4), 6);
   assert.equal(subtract(-3, 4), -7);
   assert.equal(subtract(5.5, 2.25), 3.25);
 });
@@ -46,7 +46,7 @@ test('callGetUserById rejects when the response is not OK', async (context) => {
     status: 404,
     statusText: 'Not Found',
   }));
-  context.mock.method(console, 'error', () => {});
+  context.mock.method(console, 'error', () => { });
 
   await assert.rejects(() => callGetUserById(999), {
     message: 'Network response was not ok',
