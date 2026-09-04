@@ -5,7 +5,7 @@ import { callGetUserById, divide, multiply, subtract } from "./math.js";
 
 test("multiply returns the product of two numbers", () => {
   assert.equal(multiply(6, 7), 42);
-  assert.equal(multiply(-4, 4), -12);
+  assert.equal(multiply(-4, 4), -16);
   assert.equal(multiply(2.5, 4), 10);
 });
 
