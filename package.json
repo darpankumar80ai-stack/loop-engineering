@@ -1,6 +1,10 @@
 {
   "type": "module",
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "format:check": "prettier --check \"*.js\""
+  },
+  "devDependencies": {
+    "prettier": "^3.9.6"
   }
 }
